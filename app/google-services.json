@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "339835844090",
+    "firebase_url": "https://desempenhoescolar-de1b8.firebaseio.com",
+    "project_id": "desempenhoescolar-de1b8",
+    "storage_bucket": "desempenhoescolar-de1b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339835844090:android:d68f11e9272fa76766e043",
+        "android_client_info": {
+          "package_name": "com.example.desempenhoescolarapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "339835844090-ifmhe07hgt84j6rqihb9vdvs5sg15qlh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.desempenhoescolarapp",
+            "certificate_hash": "6c619e0d64963e88d352d06ceb906016d3d69d41"
+          }
+        },
+        {
+          "client_id": "339835844090-0diaoafvjl0o4e755p2jbtki02gv1tir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArYICvsKI-Fc5ZErbmbTQEgnrhuhHdgvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "339835844090-0diaoafvjl0o4e755p2jbtki02gv1tir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

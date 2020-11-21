@@ -1,0 +1,1183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_verde"
+    android:contentDescription="@string/bt_add"
+    tools:context=".moduloAdministrador">
+
+    <Spinner
+        android:id="@+id/sp_disciplina1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Spinner
+        android:id="@+id/sp_disciplina2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_disciplina1" />
+
+    <Spinner
+        android:id="@+id/sp_disciplina3"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_disciplina2" />
+
+    <Spinner
+        android:id="@+id/sp_disciplina4"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_disciplina3" />
+
+    <Spinner
+        android:id="@+id/sp_disciplina5"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_disciplina4" />
+
+    <Spinner
+        android:id="@+id/sp_turma1"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="@+id/tva_email"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Spinner
+        android:id="@+id/sp_turma2"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/tva_email"
+        app:layout_constraintTop_toBottomOf="@+id/sp_turma1" />
+
+    <Spinner
+        android:id="@+id/sp_turma3"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/tva_email"
+        app:layout_constraintTop_toBottomOf="@+id/sp_turma2" />
+
+    <Spinner
+        android:id="@+id/sp_turma4"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/tva_email"
+        app:layout_constraintTop_toBottomOf="@+id/sp_turma3" />
+
+    <Spinner
+        android:id="@+id/sp_turma5"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/tva_email"
+        app:layout_constraintTop_toBottomOf="@+id/sp_turma4" />
+
+    <Spinner
+        android:id="@+id/sp_turma"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/tve_nome"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/eta_cargo"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="@string/hinta_cargo"
+        android:inputType="textPersonName"
+        android:text="@string/eta_cargo"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/tva_nome"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tva_cargo"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="monospace"
+        android:text="@string/tva_cargo"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/eta_nome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tva_turma"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="monospace"
+        android:text="@string/tva_turma"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/eta_nome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tva_turmas"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="monospace"
+        android:text="@string/tva_turmas"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/sp_turma1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tva_disciplinas"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="200dp"
+        android:fontFamily="monospace"
+        android:text="@string/tva_disciplinas"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/sp_disciplina1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tva_tipo"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="monospace"
+        android:text="@string/tva_tipo"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/eta_senha"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tva_senha" />
+
+    <TextView
+        android:id="@+id/tva_senha"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="monospace"
+        android:text="@string/tva_senha"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/eta_senha"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tva_email" />
+
+    <TextView
+        android:id="@+id/tva_nome"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="monospace"
+        android:text="@string/tva_nome"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/eta_nome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tva_email"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="monospace"
+        android:text="@string/tva_email"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/eta_nome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tva_nome" />
+
+    <Button
+        android:id="@+id/bt_gerencia_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="108dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/bt_gerencia_usuario"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tv_desempenho_escolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="casual"
+        android:text="@string/tv_desempenho_escolar"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="119dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@string/img_description"
+        app:layout_constraintBottom_toTopOf="@id/bt_gerencia_usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_desempenho_escolar"
+        app:srcCompat="@drawable/boletim" />
+
+    <Button
+        android:id="@+id/bt_gerencia_horarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="107dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/bt_gerencia_horarios"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_gerencia_usuario" />
+
+    <ImageButton
+        android:id="@+id/bt_add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/colorAccent"
+        android:contentDescription="@string/bt_add"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <ImageButton
+        android:id="@+id/bt_alt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/colorAccent"
+        android:contentDescription="@string/bt_alt"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/bt_del"
+        app:layout_constraintStart_toEndOf="@+id/bt_add"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/alterar" />
+
+    <ImageButton
+        android:id="@+id/bt_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="120dp"
+        android:backgroundTint="@color/colorAccent"
+        android:contentDescription="@string/bt_del"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <EditText
+        android:id="@+id/eta_nome"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="@string/hinta_nome"
+        android:inputType="textPersonName"
+        android:text="@string/eta_nome"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/tva_nome"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/eta_email"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="@string/hinta_email"
+        android:inputType="textEmailAddress"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/tva_email"
+        app:layout_constraintTop_toBottomOf="@+id/eta_nome" />
+
+    <EditText
+        android:id="@+id/eta_senha"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/hinta_senha"
+        android:inputType="textPassword"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/tva_senha"
+        app:layout_constraintTop_toBottomOf="@+id/eta_email" />
+
+    <RadioGroup
+        android:id="@+id/rd_group_tipo"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/tva_tipo"
+        app:layout_constraintTop_toBottomOf="@+id/eta_senha">
+
+        <RadioButton
+            android:id="@+id/rda_administrador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/rda_admin"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rda_professor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/rda_professor"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rda_aluno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/rda_aluno"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bta_limpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/bta_limpar"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rd_group_tipo" />
+
+    <Button
+        android:id="@+id/bta_avancar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/bta_avancar"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rd_group_tipo" />
+
+    <Button
+        android:id="@+id/bta_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/bta_voltar"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rd_group_tipo" />
+
+    <Button
+        android:id="@+id/bta_limpar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/bta_limpar"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bta_salvar" />
+
+    <Button
+        android:id="@+id/bta_salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/bta_salvar"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rd_group_tipo" />
+
+    <Button
+        android:id="@+id/bta_cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/bta_cancelar"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bta_salvar" />
+
+
+    <EditText
+        android:id="@+id/eth_sab5"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_sex5"
+        app:layout_constraintTop_toBottomOf="@+id/eth_sab4" />
+
+    <EditText
+        android:id="@+id/eth_sab3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_sex3"
+        app:layout_constraintTop_toBottomOf="@+id/eth_sab2" />
+
+    <EditText
+        android:id="@+id/eth_sab2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_sex2"
+        app:layout_constraintTop_toBottomOf="@+id/eth_sab1" />
+
+    <EditText
+        android:id="@+id/eth_sab1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_sex1"
+        app:layout_constraintTop_toBottomOf="@+id/tvh_sabado" />
+
+    <EditText
+        android:id="@+id/eth_sex1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_qui1"
+        app:layout_constraintTop_toBottomOf="@+id/tvh_sexta" />
+
+    <EditText
+        android:id="@+id/eth_sex2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_qui2"
+        app:layout_constraintTop_toBottomOf="@+id/eth_sex1" />
+
+    <EditText
+        android:id="@+id/eth_sex3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_qui3"
+        app:layout_constraintTop_toBottomOf="@+id/eth_sex2" />
+
+    <EditText
+        android:id="@+id/eth_sex4"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_qui4"
+        app:layout_constraintTop_toBottomOf="@+id/eth_sex3" />
+
+    <EditText
+        android:id="@+id/eth_sex5"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_qui5"
+        app:layout_constraintTop_toBottomOf="@+id/eth_sex4" />
+
+    <EditText
+        android:id="@+id/eth_qui5"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_qua5"
+        app:layout_constraintTop_toBottomOf="@+id/eth_qui4" />
+
+    <EditText
+        android:id="@+id/eth_qui4"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_qua4"
+        app:layout_constraintTop_toBottomOf="@+id/eth_qui3" />
+
+    <EditText
+        android:id="@+id/eth_qui3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_qua3"
+        app:layout_constraintTop_toBottomOf="@+id/eth_qui2" />
+
+    <EditText
+        android:id="@+id/eth_qui2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_qua2"
+        app:layout_constraintTop_toBottomOf="@+id/eth_qui1" />
+
+    <EditText
+        android:id="@+id/eth_qui1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_qua1"
+        app:layout_constraintTop_toBottomOf="@+id/tvh_quinta" />
+
+    <EditText
+        android:id="@+id/eth_qua4"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_ter4"
+        app:layout_constraintTop_toBottomOf="@+id/eth_qua3" />
+
+    <EditText
+        android:id="@+id/eth_qua5"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_ter5"
+        app:layout_constraintTop_toBottomOf="@+id/eth_qua4" />
+
+    <EditText
+        android:id="@+id/eth_qua2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_ter2"
+        app:layout_constraintTop_toBottomOf="@+id/eth_qua1" />
+
+    <EditText
+        android:id="@+id/eth_qua3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_ter3"
+        app:layout_constraintTop_toBottomOf="@+id/eth_qua2" />
+
+    <EditText
+        android:id="@+id/eth_qua1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_ter1"
+        app:layout_constraintTop_toBottomOf="@+id/tvh_quarta" />
+
+    <EditText
+        android:id="@+id/eth_ter5"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_seg5"
+        app:layout_constraintTop_toBottomOf="@+id/eth_ter4" />
+
+    <EditText
+        android:id="@+id/eth_ter4"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_seg4"
+        app:layout_constraintTop_toBottomOf="@+id/eth_ter3" />
+
+    <EditText
+        android:id="@+id/eth_ter1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_seg1"
+        app:layout_constraintTop_toBottomOf="@+id/tvh_terca" />
+
+    <EditText
+        android:id="@+id/eth_ter2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_seg2"
+        app:layout_constraintTop_toBottomOf="@+id/eth_ter1" />
+
+    <EditText
+        android:id="@+id/eth_ter3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_seg3"
+        app:layout_constraintTop_toBottomOf="@+id/eth_ter2" />
+
+    <EditText
+        android:id="@+id/eth_seg3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eth_seg2" />
+
+    <EditText
+        android:id="@+id/eth_seg4"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eth_seg3" />
+
+    <EditText
+        android:id="@+id/eth_seg5"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eth_seg4" />
+
+    <EditText
+        android:id="@+id/eth_seg2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eth_seg1" />
+
+    <EditText
+        android:id="@+id/eth_seg1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvh_seg" />
+
+    <TextView
+        android:id="@+id/tvh_sabado"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="monospace"
+        android:text="@string/tvh_sabado"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/tvh_sexta"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tvh_sexta"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="monospace"
+        android:text="@string/tvh_sexta"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/tvh_quinta"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tvh_quinta"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="monospace"
+        android:text="@string/tvh_quinta"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/tvh_quarta"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tvh_quarta"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="monospace"
+        android:text="@string/tvh_quarta"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/tvh_terca"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tvh_terca"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="monospace"
+        android:text="@string/tvh_terca"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/tvh_seg"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/eth_sab4"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/eth_sex4"
+        app:layout_constraintTop_toBottomOf="@+id/eth_sab3" />
+
+    <TextView
+        android:id="@+id/tvh_seg"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="monospace"
+        android:text="@string/tvh_segunda"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <Spinner
+        android:id="@+id/sph_turma"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/tvh_turma"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tvh_turma"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="monospace"
+        android:text="@string/tvh_turma"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <Button
+        android:id="@+id/bth_salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/bth_salvar"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <ProgressBar
+        android:id="@+id/pb_barra"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="100dp"
+        android:indeterminate="true"
+        android:indeterminateTint="#027704"
+        android:progressTint="@android:color/holo_red_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btm_horario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/bth_carregar"
+        app:layout_constraintStart_toEndOf="@+id/sph_turma"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/bte_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/bte_voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bte_buscar" />
+
+    <EditText
+        android:id="@+id/ete_busca"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="@string/hinte_busca"
+        android:inputType="textPersonName"
+        android:text="@string/eta_cargo"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/tve_nome"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tve_nome"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="monospace"
+        android:text="@string/tve_nome"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@id/ete_busca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/bte_buscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/bte_buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ete_busca" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,7 +26,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 import org.w3c.dom.Text;
 
 public class testes extends AppCompatActivity implements View.OnClickListener {
-    private FirebaseFirestore banco = null;
+
 
 
 
